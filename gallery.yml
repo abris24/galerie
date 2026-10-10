@@ -7,9 +7,6 @@ images:
     title: Bild 1
     description: Der Dateiname dieses Bildes ist 02.jpg
   - file: 01.jpg
-    thumb: 01.jpg
-    title: Magna feugiat lorem
-    description: Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.
   - file: 03.jpg
     thumb: 03.jpg
     title: Tempus aliquam veroeros
