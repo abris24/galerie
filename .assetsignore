@@ -1,0 +1,12 @@
+node_modules
+.git
+.wrangler
+scripts
+package.json
+package-lock.json
+gallery.yml
+.gitignore
+.nvmrc
+README.txt
+wrangler.jsonc
+*.md
