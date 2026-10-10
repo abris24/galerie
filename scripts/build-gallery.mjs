@@ -81,10 +81,11 @@ function hasText(value) {
 function renderArticle(entry, thumbName) {
   const fullSrc = escapeHtml(`images/fulls/${entry.file}`);
   const thumbSrc = escapeHtml(`images/thumbs/${thumbName}`);
+  const alt = escapeHtml(entry.file);
   const lines = [
     '        <article class="thumb">',
     `          <a href="${fullSrc}" class="image"`,
-    `            ><img src="${thumbSrc}" alt=""`,
+    `            ><img src="${thumbSrc}" alt="${alt}"`,
     "          /></a>",
   ];
 
