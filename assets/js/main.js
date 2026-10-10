@@ -254,6 +254,7 @@
 				onPopupClose: function() { $body.removeClass('modal-active'); },
 				onPopupOpen: function() { $body.addClass('modal-active'); },
 				overlayOpacity: 0,
+				popupBlankCaptionText: '',
 				popupCloserText: '',
 				popupHeight: 150,
 				popupLoaderText: '',
