@@ -7,6 +7,17 @@
 /* Footer */
 
 	#footer {
+		.about-image {
+			margin: 0 0 2em 0;
+
+			img {
+				display: block;
+				height: auto;
+				max-width: 100%;
+				width: 60%;
+			}
+		}
+
 		.copyright {
 			color: _palette(fg-light);
 			font-size: 0.9em;
