@@ -54,6 +54,12 @@
 			right: 0;
 			top: 0;
 
+			&.nav-center {
+				left: 50%;
+				right: auto;
+				@include vendor('transform', 'translateX(-50%)');
+			}
+
 			> ul {
 				list-style: none;
 				margin: 0;
@@ -95,30 +101,58 @@
 
 	@include breakpoint('<=small') {
 		body {
-			padding: _size(header) 0 0 0;
+			padding: 6.5em 0 0 0;
 		}
 
 		#header {
+			@include vendor('display', 'flex');
+			@include vendor('flex-wrap', 'wrap');
+			@include vendor('align-items', 'center');
 			@include vendor('transform', 'translateY(0)');
 			bottom: auto;
-			height: _size(header);
-			padding: 0 1em;
+			height: 6.5em;
+			line-height: 1.2;
+			padding: 0;
 			top: 0;
 
 			body.is-preload & {
-				@include vendor('transform', 'translateY(#{_size(header) * -0.85})');
+				@include vendor('transform', 'translateY(-6.5em)');
 			}
 
 			h1 {
-				font-size: 0.9em;
+				@include vendor('align-items', 'center');
+				@include vendor('display', 'flex');
+				flex: 0 0 100%;
+				font-size: 1em;
+				height: 50%;
+				line-height: 1.2;
+				padding: 0 1em;
+				width: 100%;
 			}
 
 			nav {
+				height: 50%;
+				left: auto;
+				line-height: 3.25em;
+				position: static;
+				right: auto;
+				top: auto;
+				width: 50%;
+
+				&.nav-center {
+					@include vendor('transform', 'none');
+					text-align: left;
+				}
+
+				&:not(.nav-center) {
+					text-align: right;
+				}
+
 				> ul {
 					> li {
 						a {
 							font-size: 0.9em;
-							padding: 0 1.15em;
+							padding: 0 1em;
 						}
 					}
 				}

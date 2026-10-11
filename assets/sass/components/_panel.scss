@@ -97,7 +97,7 @@
 			@include vendor('transform', 'translateY(-100vh)');
 			@include padding(4em, 2em);
 			bottom: auto;
-			top: calc(#{_size(header)} - 1px);
+			top: calc(6.5em - 1px);
 
 			&.active {
 				@include vendor('transform', 'translateY(0)');

@@ -1169,7 +1169,7 @@ input, select, textarea {
 				transform: translateY(-100vh);
 				padding: 4em 2em 2em 2em ;
 				bottom: auto;
-				top: calc(4em - 1px);
+				top: calc(6.5em - 1px);
 			}
 
 				.panel.active {
@@ -1562,7 +1562,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		body {
-			padding: 4em 0 0 0;
+			padding: 6.5em 0 0 0;
 		}
 
 		#header {
@@ -1570,26 +1570,78 @@ input, select, textarea {
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
 			transform: translateY(0);
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
 			bottom: auto;
-			height: 4em;
-			padding: 0 1em;
+			height: 6.5em;
+			line-height: 1.2;
+			padding: 0;
 			top: 0;
 		}
 
 			body.is-preload #header {
-				-moz-transform: translateY(-3.4em);
-				-webkit-transform: translateY(-3.4em);
-				-ms-transform: translateY(-3.4em);
-				transform: translateY(-3.4em);
+				-moz-transform: translateY(-6.5em);
+				-webkit-transform: translateY(-6.5em);
+				-ms-transform: translateY(-6.5em);
+				transform: translateY(-6.5em);
 			}
 
 			#header h1 {
-				font-size: 0.9em;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-flex: 0 0 100%;
+				-webkit-flex: 0 0 100%;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				font-size: 1em;
+				height: 50%;
+				line-height: 1.2;
+				padding: 0 1em;
+				width: 100%;
+			}
+
+			#header nav,
+			#header nav.nav-center {
+				height: 50%;
+				left: auto;
+				line-height: 3.25em;
+				position: static;
+				right: auto;
+				top: auto;
+				width: 50%;
+			}
+
+			#header nav.nav-center {
+				-moz-transform: none;
+				-webkit-transform: none;
+				-ms-transform: none;
+				transform: none;
+				text-align: left;
+			}
+
+			#header nav:not(.nav-center) {
+				text-align: right;
 			}
 
 			#header nav > ul > li a {
 				font-size: 0.9em;
-				padding: 0 1.15em;
+				padding: 0 1em;
 			}
 
 	}
